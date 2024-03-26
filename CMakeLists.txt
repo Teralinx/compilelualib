@@ -11,6 +11,9 @@ project(compilelualib)
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/luasource luafilesource)
 
 #add target
+
 add_library(lualib ${luafilesource})
+
+target_include_directories(${CMAKE_CURRENT_SOURCE_DIR}/luasource)
 
 
